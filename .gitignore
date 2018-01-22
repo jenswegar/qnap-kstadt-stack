@@ -1,0 +1,2 @@
+# Skip environment specific config file
+.env

@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  influxdb:
+    image: influxdb:1.4.2
+    volumes:
+      - influxdb_data:/var/lib/influxdb:rw
+    environment:
+     - INFLUXDB_DB=kstadt_stats
+     - INFLUXDB_USER=${INFLUXDB_USER}
+
+volumes:
+  influxdb_data:
